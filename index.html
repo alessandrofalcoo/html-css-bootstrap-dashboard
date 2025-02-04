@@ -12,7 +12,7 @@
         <nav
             class="navbar navbar-expand-xl navbar-dark bg-dark"
         >
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./assets/img/duck.png" style="width: 70px;" alt=""></a>
                 <button
                     class="navbar-toggler d-lg"
@@ -69,15 +69,79 @@
 
          <main> 
             
-            <div class="container-sm d-flex justify-content-between !align !spacing bg-secondary mt-2"> 
+        <div class="container-sm d-flex justify-content-between !align !spacing bg-secondary mt-2 p-0"> 
                 <h2>Catalogo Libri</h2>
-                <a class="btn btn-primary btn-sm center pt-2" href="#"   role="button">Aggiungi Libro</a>
-         </div>
-        
-            
+                <a class="btn btn-primary btn-sm center pt-2" href="#" role="button">Aggiungi Libro</a>
+        </div>
+         
+        <div class="container-sm !spacing">
+            <div
+                class="table-responsive"
+            >
+                <table
+                    class="table table-striped table-hover table-borderless align-middle"
+                >
+                    <thead class="table-light">
+                        <caption>
 
-        
-        </main>
+                        </caption>
+                        <tr>
+                            <th>Titoli</th>
+                            <th>Stato </th>
+                            <th>Azioni </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr class="table-light">
+                            <td scope="row">I pilastri della terra</td>
+                            <td><p class="btn bg-success text-light p-2" style="border-radius: 20px;">Disponibile</p></td>
+                            <td><i class="icon-move column-drag">Lorem.</td>
+                        </tr>
+                        <tr
+                            class="table-secondary"
+                        >
+                        <td scope="row">I pilastri della terra</td>
+                        <td><p class="btn bg-success text-light p-2" style="border-radius: 20px;">Disponibile</p></td>
+                        <td><i class="icon-move column-drag">Lorem.</td>                        </tr>
+                            <td scope="row">I pilastri della terra</td>
+                            <td><p class="btn bg-success text-light p-2" style="border-radius: 20px;">Disponibile</p></td>
+                            <td><i class="icon-move column-drag">Lorem.</td>
+                                <td scope="row">I pilastri della terra</td>
+                            <td><p class="btn bg-success text-light p-2" style="border-radius: 20px;">Disponibile</p></td>
+                            <td><i class="icon-move column-drag">Lorem.</td>
+
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+                </table>
+            </div>
+            <div class="container mt-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="mb-2">Todo</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="task1">
+                                <label class="form-check-label" for="task1">Chiamare segreteria</label>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="task2">
+                                <label class="form-check-label" for="task2">Mandare avvisi prestiti scaduti</label>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" id="task3">
+                                <label class="form-check-label" for="task3">Ordinare nuovi libri</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     </main>
 
         
         
