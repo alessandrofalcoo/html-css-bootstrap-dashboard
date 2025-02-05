@@ -60,64 +60,61 @@
     <main>
         <div class="container">
             <h2 class="p-2">Nome Libro</h2>
-            <form action="" method="get">
-                <div class="container-fluid row row-cols-2">
+            <form action="" method="get" class="container-fluid">
+                <div class=" row row-cols-2">
                     <div class="mb-3 ">
-                        <label for="" class="form-label"><strong>Nome autore</strong></label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="Inserisci il nome dell'autore" />
+                        <label for="Author_name" class="form-label"><strong>Nome autore</strong></label>
+                        <input type="text" class="form-control" name="Author_name" id="Author_name"
+                            aria-describedby="helpId" placeholder="Inserisci il nome dell'autore" />
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label"><strong>Cognome autore</strong></label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="Inserisci il cognome dell'autore" />
+                        <label for="Author_surname" class="form-label"><strong>Cognome autore</strong></label>
+                        <input type="text" class="form-control" name="Author_surname" id="Author_surname"
+                            aria-describedby="helpId" placeholder="Inserisci il cognome dell'autore" />
                     </div>
                 </div>
-                <div class="container-fluid row px-3 d-lg-row-cols-4">
-                    <label for="" class="form-label"><strong>Titolo</strong></label>
-                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                <div>
+                    <label for="Title" class="form-label"><strong>Titolo</strong></label>
+                    <input type="text" class="form-control" name="Title" id="Title" aria-describedby="helpId"
                         placeholder="Inserisci il titolo del libro" />
                     <small id="helpId" class="form-text text-muted">Titolo versione italiana</small>
+                    <div class="row row-cols-1 row-cols-xl-3">
+                        <div class="mb-3">
+                            <label for="Genre" class="form-label"><strong>Genere</strong></label>
+                            <select class="form-select form-select-lg" name="Genre" id="Genre">
+                                <option selected>Scegli il genere</option>
+                                <option value="">Giallo</option>
+                                <option value="">Horror</option>
+                                <option value="">Avventura</option>
+                            </select>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="" class="form-label"><strong>Genere</strong></label>
-                        <select class="form-select form-select-lg" name="" id="">
-                            <option selected>Scegli il genere</option>
-                            <option value="">Giallo</option>
-                            <option value="">Horror</option>
-                            <option value="">Avventura</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="" class="form-label"><strong>Anno di pubblicazione</strong></label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="Inserisci l'anno" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label"><strong>ISBN#</strong></label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="Inserisci il codice ISBN#" />
+                        <div class="mb-3">
+                            <label for="Year" class="form-label"><strong>Anno di pubblicazione</strong></label>
+                            <input type="text" class="form-control" name="Year" id="Year" aria-describedby="helpId"
+                                placeholder="Inserisci l'anno" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="ISBN" class="form-label"><strong>ISBN#</strong></label>
+                            <input type="text" class="form-control" name="ISBN" id="ISBN" aria-describedby="helpId"
+                                placeholder="Inserisci il codice ISBN#" />
+                        </div>
                     </div>
                 </div>
-                <div class="container-fluid">
-                    <hr>
-                </div>
+                <hr>
 
-                <div class="container-fluid">
-                    <div class="mb-3">
-                        <label for="" class="form-label"><strong>Note</strong></label>
-                        <textarea class="form-control" name="" id="" rows="3"
-                            placeholder="Inserisci eventuali note sul libro"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="" />
-                        <label class="form-check-label" for=""> Disponibile anche in digitale </label>
-                    </div>
-                    <a class="btn btn-primary btn-sm center mt-3 rounded-2" type="submit" role="button">Aggiungi
-                        Libro</a>
-
+                <div class="mb-3">
+                    <label for="Note" class="form-label"><strong>Note</strong></label>
+                    <textarea class="form-control" name="Note" id="Note" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> Disponibile anche in digitale </label>
+                </div>
+                <button class="btn btn-primary btn-sm center mt-3 rounded-2" type="submit" role="button">Aggiungi
+                    Libro</button>
+
 
             </form>
         </div>
