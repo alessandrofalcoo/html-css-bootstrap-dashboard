@@ -59,7 +59,7 @@
     <!-- End Header -->
     <main>
 
-        <h1 class="p-2">Nome Libro</h1>
+        <h2 class="p-2">Nome Libro</h2>
 
         <form action="" method="get">
             <div class="container-fluid row row-cols-2">
@@ -80,23 +80,42 @@
                     placeholder="Inserisci il titolo del libro" />
                 <small id="helpId" class="form-text text-muted">Titolo versione italiana</small>
 
-                <div class="accordion " id="accordionExample">
-                    <div class="accordion-item p-1">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Scegli il genere
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="mb-3">
+                    <label for="" class="form-label"><strong>Genere</strong></label>
+                    <select class="form-select form-select-lg" name="" id="">
+                        <option selected>Scegli il genere</option>
+                        <option value="">Giallo</option>
+                        <option value="">Horror</option>
+                        <option value="">Avventura</option>
+                    </select>
                 </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label"><strong>Anno di pubblicazione</strong></label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                        placeholder="Inserisci l'anno" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"><strong>ISBN#</strong></label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                        placeholder="Inserisci il codice ISBN#" />
+                </div>
+            </div>
+            <div class="container-fluid">
+                <hr>
+            </div>
+
+            <div class="container-fluid">
+                <div class="mb-3">
+                    <label for="" class="form-label"><strong>Note</strong></label>
+                    <textarea class="form-control" name="" id="" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> Disponibile anche in digitale </label>
+                </div>
+                <a class="btn btn-primary btn-sm center mt-3 rounded-2" type="submit" role="button">Aggiungi Libro</a>
 
             </div>
 
